@@ -1,0 +1,36 @@
+<div flex="100" flex-sm="100" flex-xs="100" layout="column" layout-padding>
+<md-card>
+  
+
+            
+     <md-toolbar class="md-primary md-hue-3">
+      <div class="md-toolbar-tools">
+          <md-card-title-text>
+            <span class="md-headline">Stats</span>
+              
+          </md-card-title-text>
+          
+          <span flex></span>
+            
+      <md-button ng-click="leave()" class="md-primary md-raised md-hue-3">
+        Leave
+      </md-button>
+        
+               
+      </div>
+    </md-toolbar>
+            
+       
+          <md-list>
+              
+            <md-list-item>
+            Name: {{stats.user_name}}
+            </md-list-item>
+            <md-list-item >
+            Coin: {{stats.user_coins}}
+            </md-list-item>
+            
+           </md-list>
+      
+      </md-card>
+</div>

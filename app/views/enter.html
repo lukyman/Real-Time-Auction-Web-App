@@ -1,0 +1,17 @@
+<section layout="row" layout-sm="column" layout-align="center center" layout-wrap layout-padding>
+<form name="loginForm">
+  <md-input-container class="md-block">
+    <label>Your name</label>
+    <input name="name" ng-model="data.username" required>
+    <div ng-messages="userForm.lastName.$error">
+      <div ng-message="required">This is required! </div> 
+    </div>
+    <div ng-message="err">{{err}} </div> 
+     <md-button ng-click='userLogin(data)' class="md-primary">
+  Enter
+</md-button>
+  </md-input-container>
+  
+ 
+</form>
+</section>

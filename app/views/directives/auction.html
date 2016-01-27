@@ -1,0 +1,48 @@
+<div flex="100" flex-sm="100" flex-xs="100" layout="column" layout-padding>
+<md-card>
+    
+    <md-toolbar class="md-primary md-hue-3">
+      <div class="md-toolbar-tools">
+        
+        <md-card-header>
+          <md-card-header-text>
+            <span class="md-headline">Current Auction</span>
+          </md-card-header-text>
+          
+         
+        </md-card-header>
+                  
+       <span flex></span>
+        <md-button><span flex>Time left</span> 50 sec</md-button>
+               
+      </div>
+    </md-toolbar>
+        <md-card-header-text layout-padding>
+            <span class="md-title">Seller</span>
+            <span class="md-subhead"> Ahmed</span>
+          </md-card-header-text>
+          
+        <md-card-title>
+          <md-card-title-text>
+              <img ng-src="{{imagePath}}" class="md-card-image">
+            <span class="md-headline">Carrot</span>
+            <span class="md-subhead">Quantity 300</span>
+        
+          </md-card-title-text>
+          
+          <md-card-title-text>
+              
+            <span class="md-title">Winning Bid 200</span>
+          </md-card-title-text>
+        </md-card-title>
+        
+     
+        <md-card-content>
+           <md-input-container class="md-block" flex-gt-sm>
+          <label>Your Bid value</label>
+          <input name="bidvalue" ng-model="user.bidvalue"  />
+          <md-button class="md-primary">Place Bid</md-button>
+        </md-input-container>
+        </md-card-content>
+      </md-card>
+</div>

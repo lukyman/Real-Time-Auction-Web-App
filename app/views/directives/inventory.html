@@ -1,0 +1,32 @@
+<div flex="100" flex-sm="100" flex-xs="100" layout="column" layout-padding>
+<md-card>
+         
+     <md-toolbar class="md-primary md-hue-3">
+      <div class="md-toolbar-tools">
+          <md-card-title-text>
+            <span class="md-headline">Inventory</span>      
+          </md-card-title-text>
+         
+      </div>
+    </md-toolbar>
+                    
+      <md-list ng-repeat="item in inventory">
+          
+       <md-list-item >
+                <md-divider></md-divider>
+          <span ng-model="data.user_item_id" value='{{item.user_item_id}}' hidden>{{item.user_item_id}}</span>
+                <md-card-avatar>
+                {{item.item_name}} <img class="md-avatar md-primary md-raised"  src="http://localhost:5000/{{item.image_path}}"/>
+                </md-card-avatar>
+             
+                   <span flex>
+                       
+                   </span>
+              <span>Quantity: {{item.item_quantity}}</span>
+            <span flex></span>
+            <md-button class="md-primary md-raised" ng-click="confirmAuction($event,data)"> Auction</md-button>
+          
+         </md-list-item>
+      </md-list>
+      </md-card>
+</div>

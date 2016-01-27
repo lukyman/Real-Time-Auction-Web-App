@@ -1,0 +1,43 @@
+
+
+<md-dialog aria-label="Confirm Auction"  ng-cloak  ng-controller="MainCtrl">
+  <form>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Confirm Auction</h2>
+        <span flex></span>
+        
+      </div>
+    </md-toolbar>
+    <md-dialog-content>
+      <div class="md-dialog-content">
+    
+      <md-input-container class="md-block">
+        <label>Quantity</label>
+        <input  required name="description" ng-model="data.quantity">
+        <div >
+          <div ng-message="required">This is required.</div>        
+        </div>
+      </md-input-container>
+      <md-input-container class="md-block">
+        <label>Min Bid Value</label>
+        <input required name="clientName" ng-model="data.minValue">
+        <div>
+          <div ng-message="required">This is required.</div>
+        </div>
+      </md-input-container>
+      
+      </div>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+     
+      <md-button ng-click="start(data)">
+       Start Auction
+      </md-button>
+      <md-button ng-click="cancel()" style="margin-right:20px;">
+        Cancel
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>
+
